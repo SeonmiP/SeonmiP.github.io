@@ -28,7 +28,7 @@
 </head>
 <body>
 
-
+  
 <!-- <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -151,59 +151,38 @@
   </div>
 </section>
 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item">
-          <video poster="" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/00000.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item">
-          <video poster="" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/00001.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item">
-          <video poster="" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/00002.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item">
-          <video poster="" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/00003.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item">
-          <video poster="" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/00004.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item">
-          <video poster="" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/00005.mp4"
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video class id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/edit.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Results of KineTy</span>
+        <font size=2>The video can be edited with our KineTy model</font>
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-3">What is Kinetic Typography?</h3>
+        <div class="publication-video">
+          <video class id="teaser" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/method.mp4"
                     type="video/mp4">
           </video>
         </div>
       </div>
     </div>
-    <h2 class="subtitle has-text-centered">
-      Examples of our KineTy dataset
-    </h2>
-  </div>
-</section>
-
-
-
-
-<section class="section">
-  <div class="container is-max-desktop">
+    <!--/ Paper video. -->
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -216,42 +195,72 @@
       </div>
     </div>
     <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Paper video. -->
   </div>
 </section>
 
-
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <h2 class="title is-4 has-text-centered">Dataset Examples</h2>
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/data/00000.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/data/00001.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/data/00002.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/data/00003.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/data/00004.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/data/00005.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
     </div>
   </div>
-</section> -->
+</section>
+
 
 <section class="section">
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
+
+      <!-- attention map. -->
+      <div class="columns is-centered">
+        <div class="content">
+          <h2 class="title is-4 has-text-centered">Attention map b/w text content and visualized text</h2>
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/attention_map.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ attention map. -->
 
       <!-- Visual Effects. -->
       <!-- <div class="column">
